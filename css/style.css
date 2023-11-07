@@ -1,0 +1,213 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* ESTILO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: hsl(185, 75%, 39%)
+}
+
+.circle {
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+}
+
+.top-circle {
+    top: -600px;
+    left: -300px;
+}
+
+.bot-circle {
+    bottom: -700px;
+    right: -250px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Conteúdo Principal */
+
+.main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background: #fff;
+    border-radius: 18px;
+    z-index: 1;
+}
+
+/* Banner Perfil */
+
+.main-content .background img {
+    /* border: 1px solid red; */
+    width: 100%;
+    border-radius: 18px 18px 0 0;
+}
+
+/* Imagem de Perfil */
+
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile img {
+    margin-top: -50px;
+    border: 5px solid #fff;
+    border-radius: 80px;
+    width: 110px;
+    height: 110px;
+}
+
+/* Dados Pessoais */
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 32px;
+}
+
+.info strong {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.info span {
+    color: grey;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.info h2 {
+    font-weight: 400;
+    font-size: 14px;
+    color: grey;
+    margin: 8px;
+}
+
+/* Dados do Perfil */
+
+.data {
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px 0;
+}
+
+/* SEGUIDORES */
+
+.data-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.data-1 h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.data-1 p {
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+}
+
+/* CURTIDAS */
+
+.data-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.data-2 h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.data-2 p {
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+}
+
+/* FOTOS */
+
+.data-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.data-3 h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.data-3 p {
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+}
+
+@media (max-width: 768px) {
+    html {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-content {
+        width: 80%;
+    }
+
+    .circle {
+        width: 600px;
+        height: 600px;
+    }
+
+    .top-circle {
+        top: -350px;
+        left: -350px;
+    }
+
+    .bot-circle {
+        bottom: -350px;
+        right: -350px;
+    }
+}
